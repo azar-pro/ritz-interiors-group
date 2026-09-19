@@ -19,10 +19,11 @@ function PageReset(){
 }
 
 export default function App(){
+  const { pathname } = useLocation()
   return <>
     <PageReset />
     <Header />
-    <main>
+    <main className="page-stage" key={pathname}>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
