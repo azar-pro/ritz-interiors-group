@@ -12,6 +12,7 @@ import heroLiving from '../assets/hero-living.webp'
 import detailReading from '../assets/detail-reading.webp'
 import detailBedroom from '../assets/detail-bedroom.webp'
 import livingLight from '../assets/living-light.webp'
+import logoHero from '../assets/logo-hero.png'
 
 const heroSlides = [
   {src:heroInterior, caption:'Private Residence · Fès'},
@@ -36,6 +37,7 @@ export default function Home(){
         {heroSlides.map((item,i)=><img key={item.src} src={item.src} className={i===slide?'is-active':''} alt="" fetchPriority={i===0?'high':'auto'}/>) }
       </div>
       <div className="hero-overlay"/>
+      <Link to="/" className="hero-brand" aria-label="Ritz Interiors Group home"><img src={logoHero} alt="Ritz Interiors Group"/></Link>
       <div className="shell hero-content">
         <span className="eyebrow hero-kicker">Ritz Interiors Group</span>
         <h1><span>Spaces composed</span><span>with quiet distinction.</span></h1>
