@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo-original.jpg'
 
 export default function Footer(){
-  return <footer className="site-footer">
+  return <footer className="site-footer" data-reveal>
     <div className="shell footer-grid">
       <div className="footer-brand"><img src={logo} alt="Ritz Interiors Group"/><p>Architecture & Design<br/>Fès · Morocco</p></div>
       <div className="footer-nav">
