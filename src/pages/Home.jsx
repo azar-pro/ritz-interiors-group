@@ -12,7 +12,7 @@ import heroLiving from '../assets/hero-living.webp'
 import detailReading from '../assets/detail-reading.webp'
 import detailBedroom from '../assets/detail-bedroom.webp'
 import livingLight from '../assets/living-light.webp'
-import logoHero from '../assets/logo-hero.webp'
+import logoHero from '../assets/logoHeroData'
 
 const heroSlides = [
   {src:heroInterior, caption:'Private Residence · Fès'},
