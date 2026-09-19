@@ -1,7 +1,7 @@
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import logo from '../assets/logo-original.jpg'
-import heroLogo from '../assets/logo-hero.png'
+import heroLogo from '../assets/logo-hero.webp'
 
 const links = [
   ['/projects','Projects'],['/expertise','Expertise'],['/bespoke','Bespoke'],['/studio','Studio'],['/process','Process'],['/contact','Contact']
