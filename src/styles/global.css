@@ -263,3 +263,83 @@
   .hero-media img{transform:none!important}
   .process-track:after{transform:none!important;height:100%}
 }
+
+
+/* =========================================================
+   HOME HERO BRAND — integrated editorial logo treatment
+   ========================================================= */
+.hero-brand{
+  position:absolute;
+  z-index:5;
+  top:32px;
+  left:clamp(40px,4vw,58px);
+  width:120px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background:transparent;
+  border:0;
+  filter:drop-shadow(0 3px 12px rgba(0,0,0,.28));
+  animation:rigHeroBrandIn 900ms 90ms var(--motion-ease) both;
+}
+.hero-brand img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.hero-brand:after{
+  content:'';
+  width:44px;
+  height:1px;
+  margin-top:9px;
+  background:var(--rose2);
+  opacity:.62;
+}
+@keyframes rigHeroBrandIn{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+/* Keep the navigation layout untouched; the hero owns the large logo.
+   The sticky header reveals a smaller version only after scrolling. */
+.site-header:not(.site-header--solid) .brand--home{
+  opacity:0;
+  pointer-events:none;
+}
+.brand--home{
+  width:86px;
+  height:58px;
+  justify-content:center;
+  opacity:1;
+  transition:opacity 360ms var(--motion-ease),width 420ms var(--motion-ease),transform 420ms var(--motion-ease);
+}
+.brand--home img{
+  max-height:none;
+  width:86px;
+  height:auto;
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.22));
+}
+.site-header--solid .brand--home{
+  opacity:1;
+}
+
+@media(max-width:780px){
+  .hero-brand{
+    top:18px;
+    left:22px;
+    width:88px;
+  }
+  .hero-brand:after{
+    width:34px;
+    margin-top:6px;
+  }
+  .brand--home,
+  .brand--home img{
+    width:78px;
+  }
+  .brand--home{height:50px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hero-brand{animation:none!important}
+}
