@@ -1,6 +1,7 @@
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import logo from '../assets/logo-original.jpg'
+import heroLogo from '../assets/logo-hero.png'
 
 const links = [
   ['/projects','Projects'],['/expertise','Expertise'],['/bespoke','Bespoke'],['/studio','Studio'],['/process','Process'],['/contact','Contact']
@@ -19,7 +20,7 @@ export default function Header(){
   const home = pathname === '/'
   return <header className={`site-header ${scrolled || !home ? 'site-header--solid':''}`}>
     <div className="site-header__inner shell-wide">
-      <Link to="/" className="brand" aria-label="Ritz Interiors Group home"><img src={logo} alt="Ritz Interiors Group"/></Link>
+      <Link to="/" className={`brand ${home?'brand--home':''}`} aria-label="Ritz Interiors Group home"><img src={home?heroLogo:logo} alt="Ritz Interiors Group"/></Link>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {links.map(([to,label])=><NavLink key={to} to={to}>{label}</NavLink>)}
       </nav>
