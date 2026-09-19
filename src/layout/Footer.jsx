@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo-original.jpg'
+import logo from '../assets/logoHeroData'
 
 export default function Footer(){
   return <footer className="site-footer" data-reveal>
