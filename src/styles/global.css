@@ -587,3 +587,52 @@ body{
       linear-gradient(0deg,rgba(10,9,9,.38),transparent 56%);
   }
 }
+
+
+/* RIG STICKY HEADER REFINEMENT */
+.site-header{
+  transition:
+    background-color 360ms var(--motion-ease),
+    border-color 360ms var(--motion-ease),
+    backdrop-filter 360ms var(--motion-ease);
+}
+
+.site-header__inner{
+  transition:height 360ms var(--motion-ease);
+}
+
+.site-header--solid{
+  background:rgba(10,9,9,.90);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+
+.site-header--solid .site-header__inner{
+  height:74px;
+}
+
+.site-header--solid .brand--home{
+  width:72px;
+  height:46px;
+  transform:translateY(0);
+}
+
+.site-header--solid .brand--home img{
+  width:72px;
+}
+
+@media(max-width:780px){
+  .site-header--solid .site-header__inner{
+    height:68px;
+  }
+
+  .site-header--solid .brand--home,
+  .site-header--solid .brand--home img{
+    width:68px;
+  }
+
+  .site-header--solid .brand--home{
+    height:44px;
+  }
+}
