@@ -524,3 +524,66 @@ body{
     animation:none !important;
   }
 }
+
+
+/* RIG HERO FINAL ART DIRECTION */
+.hero-home .hero-content h1{
+  font-size:clamp(54px,6.7vw,96px);
+  line-height:.91;
+  max-width:860px;
+  margin-bottom:26px;
+}
+
+.hero-home .hero-brand{
+  width:132px;
+  top:28px;
+  left:clamp(42px,4.2vw,64px);
+}
+
+.hero-home .hero-caption{
+  right:28px;
+  bottom:42px;
+  opacity:.78;
+}
+
+/* Per-slide tonal control: protect typography without flattening the photography. */
+.hero-home--slide-0 .hero-overlay{
+  background:
+    linear-gradient(90deg,rgba(10,9,9,.62) 0%,rgba(10,9,9,.34) 42%,rgba(10,9,9,.10) 78%,rgba(10,9,9,.05) 100%),
+    linear-gradient(0deg,rgba(10,9,9,.22),transparent 48%);
+}
+
+.hero-home--slide-1 .hero-overlay{
+  background:
+    linear-gradient(90deg,rgba(10,9,9,.67) 0%,rgba(10,9,9,.39) 44%,rgba(10,9,9,.13) 76%,rgba(10,9,9,.05) 100%),
+    linear-gradient(0deg,rgba(10,9,9,.24),transparent 48%);
+}
+
+.hero-home--slide-2 .hero-overlay{
+  background:
+    linear-gradient(90deg,rgba(10,9,9,.56) 0%,rgba(10,9,9,.29) 43%,rgba(10,9,9,.08) 78%,rgba(10,9,9,.04) 100%),
+    linear-gradient(0deg,rgba(10,9,9,.18),transparent 50%);
+}
+
+@media(max-width:780px){
+  .hero-home .hero-content h1{
+    font-size:clamp(48px,13.2vw,70px);
+    line-height:.92;
+    max-width:94%;
+  }
+
+  .hero-home .hero-brand{
+    width:94px;
+    top:18px;
+    left:22px;
+  }
+
+  .hero-home .hero-overlay,
+  .hero-home--slide-0 .hero-overlay,
+  .hero-home--slide-1 .hero-overlay,
+  .hero-home--slide-2 .hero-overlay{
+    background:
+      linear-gradient(90deg,rgba(10,9,9,.66) 0%,rgba(10,9,9,.38) 58%,rgba(10,9,9,.14) 100%),
+      linear-gradient(0deg,rgba(10,9,9,.38),transparent 56%);
+  }
+}
