@@ -6,18 +6,18 @@ import SectionLabel from '../components/SectionLabel'
 import ArrowLink from '../components/ArrowLink'
 import FinalCTA from '../components/FinalCTA'
 import { projects } from '../data/projects'
-import heroInterior from '../assets/hero-interior.webp'
-import heroVilla from '../assets/hero-villa.webp'
-import heroLiving from '../assets/hero-living.webp'
+import heroLiving from '../assets/hero-living-premium.webp'
+import heroVilla from '../assets/hero-villa-premium.webp'
+import heroInterior from '../assets/hero-interior-premium.webp'
 import detailReading from '../assets/detail-reading.webp'
 import detailBedroom from '../assets/detail-bedroom.webp'
 import livingLight from '../assets/living-light.webp'
 import logoHero from '../assets/logoHeroData'
 
 const heroSlides = [
-  {src:heroInterior, caption:'Private Residence · Fès'},
-  {src:heroVilla, caption:'Residential Architecture'},
-  {src:heroLiving, caption:'Bespoke Interior Design'}
+  {src:heroLiving, caption:'Private Residence · Fès', position:'center center', zoom:'out'},
+  {src:heroVilla, caption:'Residential Architecture', position:'center 45%', zoom:'in'},
+  {src:heroInterior, caption:'Bespoke Interior Design', position:'center center', zoom:'out'}
 ]
 
 export default function Home(){
@@ -33,8 +33,22 @@ export default function Home(){
   return <>
     <Seo title="Home" description="Luxury architecture and interior design by Ritz Interiors Group in Fès, Morocco."/>
     <section className="hero hero-home">
-      <div className="hero-media" aria-hidden>
-        {heroSlides.map((item,i)=><img key={item.src} src={item.src} className={i===slide?'is-active':''} alt="" fetchPriority={i===0?'high':'auto'}/>) }
+      <div className="hero-media" aria-hidden="true">
+        {heroSlides.map((item,i)=>(
+          <div
+            key={item.src}
+            className={`hero-slide ${i===slide?'is-active':''} ${item.zoom==='in'?'hero-slide--zoom-in':'hero-slide--zoom-out'}`}
+          >
+            <img
+              src={item.src}
+              alt=""
+              style={{objectPosition:item.position}}
+              fetchPriority={i===0?'high':'auto'}
+              loading={i===0?'eager':'lazy'}
+              decoding="async"
+            />
+          </div>
+        ))}
       </div>
       <div className="hero-overlay"/>
       <Link to="/" className="hero-brand" aria-label="Ritz Interiors Group home"><img src={logoHero} alt="Ritz Interiors Group"/></Link>
