@@ -1,6 +1,7 @@
 import salon from '../assets/project-salon.webp'
 import dining from '../assets/project-dining.webp'
 import villa from '../assets/project-villa.webp'
+import villaClean from '../assets/hero-villa.webp'
 import dental from '../assets/project-dental.webp'
 import cake from '../assets/project-cake.webp'
 import bedroom from '../assets/project-bedroom.webp'
@@ -28,7 +29,7 @@ export const projects = [
     index: '02',
     title: 'Residential Villa',
     category: 'Architecture',
-    cover: villa,
+    cover: villaClean,
     gallery: [villa, dining, dark],
     intro: 'A contemporary villa language defined by strong framing, warm material contrast and a measured relationship between interior and exterior.',
     direction: 'The architecture relies on depth, shadow and restrained detailing rather than decorative excess.',
