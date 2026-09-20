@@ -32,7 +32,7 @@ export default function Home(){
 
   return <>
     <Seo title="Home" description="Luxury architecture and interior design by Ritz Interiors Group in Fès, Morocco."/>
-    <section className="hero hero-home">
+    <section className={`hero hero-home hero-home--slide-${slide}`}>
       <div className="hero-media" aria-hidden="true">
         {heroSlides.map((item,i)=>(
           <div
