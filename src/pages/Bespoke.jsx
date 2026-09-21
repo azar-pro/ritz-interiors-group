@@ -6,7 +6,7 @@ import FinalCTA from '../components/FinalCTA'
 import hero from '../assets/detail-bedroom.webp'
 import bath from '../assets/project-bath.webp'
 import detail from '../assets/detail-marble.webp'
-import reading from '../assets/detail-reading.webp'
+import reading from '../assets/detail-reading-clean.png'
 import pink from '../assets/pink-bedroom.webp'
 
 const items=['Furniture','Custom Storage','Dining Pieces','Bathrooms','Lighting','Decorative Elements','Built-in Joinery']
