@@ -4,7 +4,7 @@ import InnerHero from '../components/InnerHero'
 import SectionLabel from '../components/SectionLabel'
 import FinalCTA from '../components/FinalCTA'
 import hero from '../assets/living-light.webp'
-import detail from '../assets/detail-reading.webp'
+import detail from '../assets/detail-reading-clean.png'
 import villa from '../assets/project-villa.webp'
 
 export default function Studio(){useReveal();return <>
