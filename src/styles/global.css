@@ -1040,3 +1040,45 @@ body{
     max-width:100%;
   }
 }
+
+
+/* EXPERTISE PREVIEW — FINAL POLISH */
+.expertise-preview{
+  padding-top:clamp(70px,5.8vw,90px);
+  padding-bottom:clamp(74px,6vw,94px);
+}
+
+.expertise-preview .section-label{
+  margin-bottom:clamp(26px,2.2vw,34px);
+}
+
+.expertise-preview .expertise-row{
+  padding-top:28px;
+  padding-bottom:26px;
+}
+
+.expertise-preview .expertise-row p{
+  color:rgba(22,20,18,.58);
+  opacity:1;
+}
+
+.expertise-preview .expertise-row:last-child{
+  padding-right:18px;
+}
+
+.expertise-preview .arrow-link{
+  margin-top:-2px;
+}
+
+@media(max-width:780px){
+  .expertise-preview{
+    padding-top:62px;
+    padding-bottom:68px;
+  }
+  .expertise-preview .section-label{
+    margin-bottom:26px;
+  }
+  .expertise-preview .expertise-row p{
+    color:rgba(22,20,18,.62);
+  }
+}
