@@ -101,7 +101,12 @@ export default function Home(){
       <div className="shell">
         <SectionLabel right="Spaces for a better everyday">Our Expertise</SectionLabel>
         <div className="expertise-rows compact">
-          {['Interior Architecture','Interior Design','Bespoke Furniture','Renovation'].map((x,i)=><div className="expertise-row" key={x}><span>0{i+1}</span><h3>{x}</h3></div>)}
+          {[
+            ['Interior Architecture','Spatial planning · Flow · Materiality'],
+            ['Interior Design','Lighting · Finishes · Atmosphere'],
+            ['Bespoke Furniture','Custom pieces · Joinery · Detailing'],
+            ['Renovation','Transformation · Coordination · Delivery']
+          ].map(([title,detail],i)=><div className="expertise-row" key={title}><span>0{i+1}</span><h3>{title}</h3><p>{detail}</p></div>)}
         </div>
         <ArrowLink to="/expertise">Explore Expertise</ArrowLink>
       </div>
