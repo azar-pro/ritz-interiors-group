@@ -1112,3 +1112,33 @@ body{
     letter-spacing:.065em;
   }
 }
+
+
+/* EXPERTISE MICROCOPY READABILITY */
+.expertise-preview .expertise-row p{
+  font-size:10px;
+  line-height:1.7;
+  letter-spacing:.055em;
+  color:rgba(22,20,18,.70);
+  font-weight:500;
+}
+
+.expertise-preview .expertise-row span{
+  font-size:9px;
+  color:rgba(181,133,111,.88);
+}
+
+@media(max-width:1180px){
+  .expertise-preview .expertise-row p{
+    font-size:9.5px;
+    letter-spacing:.05em;
+  }
+}
+
+@media(max-width:780px){
+  .expertise-preview .expertise-row p{
+    font-size:10px;
+    line-height:1.65;
+    color:rgba(22,20,18,.74);
+  }
+}
