@@ -1142,3 +1142,89 @@ body{
     color:rgba(22,20,18,.74);
   }
 }
+
+
+/* BESPOKE PREVIEW — VERTICAL RHYTHM REFINEMENT */
+.bespoke-preview{
+  padding-top:clamp(72px,6vw,96px);
+  padding-bottom:clamp(76px,6.4vw,102px);
+}
+
+.bespoke-preview .bespoke-grid{
+  align-items:stretch;
+  gap:clamp(46px,5vw,76px);
+}
+
+.bespoke-preview .bespoke-image{
+  align-self:stretch;
+  min-height:clamp(520px,46vw,680px);
+  overflow:hidden;
+}
+
+.bespoke-preview .bespoke-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+}
+
+.bespoke-preview .bespoke-copy{
+  align-self:center;
+}
+
+.bespoke-preview .bespoke-copy .section-label{
+  margin-bottom:28px;
+}
+
+.bespoke-preview .bespoke-copy h2{
+  margin-bottom:24px;
+}
+
+.bespoke-preview .bespoke-copy>p{
+  margin-bottom:26px;
+  max-width:520px;
+}
+
+.bespoke-preview .bespoke-links{
+  margin-top:0;
+  margin-bottom:30px;
+}
+
+.bespoke-preview .arrow-link{
+  margin-top:2px;
+}
+
+@media(max-width:980px){
+  .bespoke-preview .bespoke-grid{
+    gap:42px;
+  }
+  .bespoke-preview .bespoke-image{
+    min-height:500px;
+  }
+}
+
+@media(max-width:780px){
+  .bespoke-preview{
+    padding-top:64px;
+    padding-bottom:72px;
+  }
+  .bespoke-preview .bespoke-image{
+    min-height:0;
+  }
+  .bespoke-preview .bespoke-image img{
+    height:auto;
+    aspect-ratio:1.05;
+  }
+  .bespoke-preview .bespoke-copy{
+    align-self:auto;
+  }
+  .bespoke-preview .bespoke-copy .section-label{
+    margin-bottom:24px;
+  }
+  .bespoke-preview .bespoke-copy>p{
+    margin-bottom:24px;
+  }
+  .bespoke-preview .bespoke-links{
+    margin-bottom:26px;
+  }
+}
