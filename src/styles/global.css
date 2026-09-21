@@ -1228,3 +1228,49 @@ body{
     margin-bottom:26px;
   }
 }
+
+
+/* BESPOKE PREVIEW — FINAL COMPACTION */
+.bespoke-preview{
+  padding-top:clamp(48px,4.2vw,66px);
+  padding-bottom:clamp(52px,4.6vw,72px);
+}
+
+.bespoke-preview .bespoke-grid{
+  align-items:start;
+}
+
+.bespoke-preview .bespoke-copy{
+  align-self:start;
+  padding-top:4px;
+}
+
+.bespoke-preview .bespoke-copy .section-label{
+  margin-bottom:22px;
+}
+
+.bespoke-preview .bespoke-copy h2{
+  margin-bottom:20px;
+}
+
+.bespoke-preview .bespoke-copy>p{
+  margin-bottom:22px;
+}
+
+.bespoke-preview .bespoke-links{
+  margin-bottom:24px;
+}
+
+.bespoke-preview .arrow-link{
+  margin-top:0;
+}
+
+@media(max-width:780px){
+  .bespoke-preview{
+    padding-top:52px;
+    padding-bottom:58px;
+  }
+  .bespoke-preview .bespoke-copy{
+    padding-top:0;
+  }
+}
