@@ -1082,3 +1082,33 @@ body{
     color:rgba(22,20,18,.62);
   }
 }
+
+
+/* EXPERTISE TEXT VISIBILITY FIX */
+.expertise-preview .expertise-row{
+  overflow:visible;
+  min-width:0;
+}
+
+.expertise-preview .expertise-row h3,
+.expertise-preview .expertise-row p{
+  overflow:visible;
+  white-space:normal;
+  text-overflow:clip;
+}
+
+.expertise-preview .expertise-row p{
+  max-width:100%;
+  padding-right:14px;
+  line-height:1.65;
+}
+
+@media(max-width:1180px){
+  .expertise-preview .expertise-row h3{
+    font-size:clamp(25px,2.2vw,31px);
+  }
+  .expertise-preview .expertise-row p{
+    font-size:8.5px;
+    letter-spacing:.065em;
+  }
+}
