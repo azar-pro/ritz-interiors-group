@@ -1728,3 +1728,91 @@ body{
     line-height:1.55;
   }
 }
+
+
+/* HOME MOBILE — FINAL QA PASS */
+@media(max-width:780px){
+
+  /* Hero: a little more breathing room and less crowding */
+  .hero-home .hero-content{
+    padding-left:26px;
+    padding-right:22px;
+  }
+
+  .hero-home .hero-content h1{
+    font-size:clamp(44px,11.6vw,58px);
+    line-height:.95;
+    max-width:94%;
+  }
+
+  /* Projects: shorten the long-scroll feel */
+  .selected-projects .project-feature--wide .project-image{
+    aspect-ratio:1.34;
+  }
+
+  .selected-projects .project-pair .project-feature:first-child .project-image,
+  .selected-projects .project-pair .project-feature:last-child .project-image{
+    aspect-ratio:1.24;
+  }
+
+  /* Philosophy */
+  .philosophy-words{
+    padding-bottom:32px;
+  }
+
+  .philosophy-image{
+    margin-top:0;
+  }
+
+  /* Expertise microcopy */
+  .expertise-preview .expertise-row p{
+    color:rgba(22,20,18,.82);
+    font-size:11px;
+    line-height:1.62;
+  }
+
+  /* Bespoke */
+  .bespoke-preview .bespoke-copy h2{
+    font-size:clamp(44px,11.6vw,56px);
+    line-height:.96;
+  }
+
+  .bespoke-preview .bespoke-links span{
+    padding:10px 0;
+  }
+
+  .bespoke-preview .bespoke-links{
+    gap:0;
+  }
+
+  /* Final CTA */
+  .final-cta h2{
+    font-size:clamp(42px,11vw,54px);
+    line-height:.97;
+  }
+
+  /* Footer */
+  .footer-brand img{
+    width:114px;
+  }
+
+  .footer-brand p,
+  .footer-nav,
+  .footer-social{
+    font-size:13.5px;
+  }
+
+  .footer-nav{
+    gap:8px;
+  }
+
+  .footer-social{
+    gap:10px;
+  }
+
+  .footer-bottom{
+    font-size:10px;
+    line-height:1.6;
+    opacity:.58;
+  }
+}
