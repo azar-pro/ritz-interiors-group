@@ -2022,3 +2022,37 @@ body{
     padding-top:40px;
   }
 }
+
+
+/* EXPERTISE FINAL NAV + EXIT SPACING */
+/* Keep active desktop navigation editorial: no browser focus box, only the fine underline. */
+.desktop-nav a,
+.desktop-nav a:focus,
+.desktop-nav a:focus-visible,
+.desktop-nav a.active{
+  border:0;
+  border-radius:0;
+  outline:0;
+  box-shadow:none;
+  background:transparent;
+}
+
+.desktop-nav a:focus-visible{
+  opacity:1;
+}
+
+.desktop-nav a:focus-visible:after,
+.desktop-nav a.active:after{
+  right:0;
+}
+
+/* Tighten the handoff from the expertise index to the dark CTA. */
+.service-list--editorial{
+  padding-bottom:clamp(48px,4.5vw,72px);
+}
+
+@media(max-width:780px){
+  .service-list--editorial{
+    padding-bottom:56px;
+  }
+}
