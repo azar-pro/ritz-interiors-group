@@ -2342,3 +2342,15 @@ body{
     padding-top:64px;
   }
 }
+
+
+/* BESPOKE MATERIALS — FINAL IMAGE OFFSET */
+.material-story .material-strip img:nth-child(2){
+  margin-top:26px;
+}
+
+@media(max-width:980px){
+  .material-story .material-strip img:nth-child(2){
+    margin-top:0;
+  }
+}
