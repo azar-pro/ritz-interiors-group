@@ -2458,3 +2458,35 @@ body{
     height:auto;
   }
 }
+
+
+/* STUDIO PAGE — FINAL ALIGNMENT PASS */
+.studio-manifesto-grid>p{
+  transform:translateY(-12px);
+}
+
+.studio-chapters{
+  padding-bottom:clamp(42px,3.8vw,60px);
+}
+
+.studio-chapters article:last-child{
+  margin-bottom:0;
+}
+
+.studio-chapters + .final-cta{
+  padding-top:74px;
+}
+
+@media(max-width:780px){
+  .studio-manifesto-grid>p{
+    transform:none;
+  }
+
+  .studio-chapters{
+    padding-bottom:50px;
+  }
+
+  .studio-chapters + .final-cta{
+    padding-top:62px;
+  }
+}
