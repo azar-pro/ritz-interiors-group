@@ -2354,3 +2354,107 @@ body{
     margin-top:0;
   }
 }
+
+
+/* STUDIO PAGE — RHYTHM REFINEMENT */
+.studio-manifesto{
+  padding-top:clamp(72px,6vw,96px);
+  padding-bottom:clamp(64px,5.5vw,88px);
+}
+
+.studio-manifesto-grid{
+  grid-template-columns:minmax(0,1.08fr) minmax(340px,.72fr);
+  gap:clamp(64px,7vw,110px);
+  align-items:end;
+}
+
+.studio-manifesto h2{
+  margin-top:24px;
+  margin-bottom:0;
+}
+
+.studio-manifesto p{
+  max-width:470px;
+  margin:0 0 12px;
+  line-height:1.7;
+}
+
+.studio-chapters{
+  padding-top:clamp(18px,2vw,30px);
+  padding-bottom:clamp(60px,5vw,82px);
+}
+
+.studio-chapters article{
+  gap:clamp(52px,6vw,84px);
+  margin-bottom:clamp(82px,7vw,108px);
+}
+
+.studio-chapters article:last-child{
+  margin-bottom:0;
+}
+
+.studio-chapters img{
+  height:clamp(500px,43vw,580px);
+}
+
+.studio-chapters article>div{
+  align-self:center;
+}
+
+.studio-chapters article.reverse{
+  align-items:center;
+}
+
+@media(max-width:980px){
+  .studio-manifesto-grid{
+    grid-template-columns:1fr .8fr;
+    gap:48px;
+  }
+
+  .studio-chapters article,
+  .studio-chapters article.reverse{
+    gap:44px;
+    margin-bottom:76px;
+  }
+
+  .studio-chapters img{
+    height:500px;
+  }
+}
+
+@media(max-width:780px){
+  .studio-manifesto{
+    padding-top:62px;
+    padding-bottom:54px;
+  }
+
+  .studio-manifesto-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .studio-manifesto p{
+    max-width:100%;
+    margin-bottom:0;
+  }
+
+  .studio-chapters{
+    padding-top:12px;
+    padding-bottom:58px;
+  }
+
+  .studio-chapters article,
+  .studio-chapters article.reverse{
+    grid-template-columns:1fr;
+    gap:28px;
+    margin-bottom:66px;
+  }
+
+  .studio-chapters article.reverse img{
+    order:0;
+  }
+
+  .studio-chapters img{
+    height:auto;
+  }
+}
