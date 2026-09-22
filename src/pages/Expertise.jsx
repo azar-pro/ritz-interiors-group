@@ -9,13 +9,13 @@ import img3 from '../assets/detail-marble.webp'
 import img4 from '../assets/hero-villa.webp'
 
 const services=[
- ['Interior Architecture','Spatial structure, circulation and proportion shaped as one coherent architectural language.',img1],
- ['Interior Design','Material, light, furniture and detail composed into calm, purposeful interiors.',img2],
- ['Bespoke Furniture','Custom pieces developed around the scale, function and identity of each space.',img3],
- ['Space Planning','Clear layouts that improve movement, use and visual balance without overfilling the room.',img1],
- ['Renovation','Existing spaces reworked with a measured approach to structure, finishes and atmosphere.',img2],
- ['Styling & Decoration','The final layer of objects, textiles, artwork and tonal balance that makes a space feel complete.',img3],
- ['Exterior Design','A restrained architectural approach to façades, entrances and outdoor spatial identity.',img4]
+ ['Interior Architecture','Spatial structure, circulation and proportion shaped as one coherent architectural language.',img1,'center 46%'],
+ ['Interior Design','Material, light, furniture and detail composed into calm, purposeful interiors.',img2,'center 50%'],
+ ['Bespoke Furniture','Custom pieces developed around the scale, function and identity of each space.',img3,'center 42%'],
+ ['Space Planning','Clear layouts that improve movement, use and visual balance without overfilling the room.',img1,'center 52%'],
+ ['Renovation','Existing spaces reworked with a measured approach to structure, finishes and atmosphere.',img2,'center 54%'],
+ ['Styling & Decoration','The final layer of objects, textiles, artwork and tonal balance that makes a space feel complete.',img3,'center 48%'],
+ ['Exterior Design','A restrained architectural approach to façades, entrances and outdoor spatial identity.',img4,'center 48%']
 ]
 
 export default function Expertise(){
@@ -40,7 +40,7 @@ export default function Expertise(){
               <h2>{s[0]}</h2>
               <p>{s[1]}</p>
             </div>
-            <img className="service-item__mobile-image" src={s[2]} alt="" loading="lazy"/>
+            <img className="service-item__mobile-image" src={s[2]} alt="" style={{objectPosition:s[3]}} loading="lazy"/>
           </article>
         )}
       </div>
@@ -53,6 +53,7 @@ export default function Expertise(){
               src={s[2]}
               alt=""
               className={i===active?'is-active':''}
+              style={{objectPosition:s[3]}}
               loading={i===0?'eager':'lazy'}
             />
           )}
